@@ -647,10 +647,99 @@ ul { list-style: none; }
 }
 
 /* Mobile Responsive Adjustments */
+/* Mobile Responsive Adjustments */
+@media (max-width: 900px) {
+    .hero-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-image-container {
+        min-height: 300px;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image-card {
+        order: -1; /* Image first on mobile */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
-    .edu-exp-grid { grid-template-columns: 1fr; }
-    .contact-content-overlay { grid-template-columns: 1fr; padding: 30px; }
-    .timeline-wrapper { border-left: none; padding-left: 0; }
-    .timeline-item { padding-left: 0; border-left: 2px solid #333; padding-left: 20px; margin-left: 5px;}
-    .timeline-marker { left: -6px; }
+    .app-container {
+        padding: 15px;
+    }
+    
+    .hero-image-container {
+        min-height: 250px;
+    }
+    
+    .profile-header h2 {
+        font-size: 2rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr 1fr; /* 2x2 Grid */
+    }
+
+    /* Timeline Mobile Tweak */
+    .experience-tile {
+        padding: 25px 20px;
+    }
+    
+    .timeline-wrapper {
+        padding-left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    
+    /* Adjust marker to stay on line */
+    .timeline-marker {
+        left: -22px; 
+    }
+    
+    .contact-tile {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr; /* 1 Column for very small screens */
+    }
+    
+    .section-heading {
+        font-size: 1.75rem;
+    }
 }
