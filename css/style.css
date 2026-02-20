@@ -3,7 +3,8 @@
     --card-dark: #0e0e0e;
     --text-white: #ffffff;
     --text-gray: #a1a1aa;
-    --accent-green: #006425; /* Tailwind Green-700 */
+    --accent-green: #008631; /* Tailwind Green-700 */
+    --accent-shadow-rgb: 0, 100, 37;
     --accent-green-bright: #22c55e;
     --font-main: 'Inter', sans-serif;
 }
@@ -94,7 +95,7 @@ ul { list-style: none; }
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(var(--accent-shadow-rgb), 0.5);
 }
 
 .hero-image-container {
@@ -259,7 +260,7 @@ ul { list-style: none; }
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(var(--accent-shadow-rgb), 0.2);
 }
 
 .stat-card i {
