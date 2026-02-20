@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check saved preference
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
+    
+    // Default to light mode if no preference is saved, or if 'light' is saved
+    if (!savedTheme || savedTheme === 'light') {
         body.classList.add('light-theme');
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
