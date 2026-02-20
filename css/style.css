@@ -557,11 +557,14 @@ ul { list-style: none; }
     border-radius: 15px;
     border: 1px solid var(--text-gray);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
     transition: transform 0.3s ease, border-color 0.3s ease;
     text-decoration: none;
     color: var(--text-white);
+    text-align: center;
 }
 
 .contact-card:hover {
@@ -570,8 +573,8 @@ ul { list-style: none; }
 }
 
 .contact-icon-box {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: var(--card-dark);
     border-radius: 50%;
     display: flex;
@@ -579,6 +582,7 @@ ul { list-style: none; }
     justify-content: center;
     flex-shrink: 0;
     border: 1px solid var(--text-gray);
+    margin-bottom: 5px;
 }
 
 .contact-icon-box i {
@@ -589,6 +593,8 @@ ul { list-style: none; }
 .contact-details {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .contact-label {
