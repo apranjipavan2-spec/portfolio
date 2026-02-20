@@ -551,11 +551,11 @@ ul { list-style: none; }
 }
 
 .contact-card {
-    background: var(--card-dark);
+    background: var(--bg-dark);
     backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 15px;
-    border: 1px solid #333;
+    border: 1px solid var(--text-gray);
     display: flex;
     align-items: center;
     gap: 20px;
@@ -572,13 +572,13 @@ ul { list-style: none; }
 .contact-icon-box {
     width: 50px;
     height: 50px;
-    background: var(--bg-dark);
+    background: var(--card-dark);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 1px solid #333;
+    border: 1px solid var(--text-gray);
 }
 
 .contact-icon-box i {
