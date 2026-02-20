@@ -206,7 +206,7 @@ ul { list-style: none; }
     padding: 40px;
     border-radius: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(var(--accent-shadow-rgb), 0.3);
 }
 
 .about-text-card p {
@@ -528,7 +528,7 @@ ul { list-style: none; }
     background: var(--card-dark);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(var(--accent-shadow-rgb), 0.3);
     border: 1px solid #333; /* Consistent with other cards */
     display: flex;
     flex-direction: column;
