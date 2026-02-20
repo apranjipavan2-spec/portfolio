@@ -3,7 +3,7 @@
     --card-dark: #0e0e0e;
     --text-white: #ffffff;
     --text-gray: #a1a1aa;
-    --accent-green: #16a34a; /* Tailwind Green-600 */
+    --accent-green: #15803d; /* Tailwind Green-700 */
     --accent-green-bright: #22c55e;
     --font-main: 'Inter', sans-serif;
 }
@@ -242,7 +242,8 @@ ul { list-style: none; }
     width: 100%;
     border-radius: 20px;
     transform: rotate(3deg);
-    border: 5px solid #333;
+    border: 5px solid var(--accent-green);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.8), 0 0 30px rgba(21, 128, 61, 0.6);
 }
 
 /* Stats Section */
